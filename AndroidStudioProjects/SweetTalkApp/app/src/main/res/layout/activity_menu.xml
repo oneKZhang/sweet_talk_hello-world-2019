@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Pick a category:"
+        android:textColor="#E6000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/popCultureButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/classicButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="classicsPressed"
+        android:text="Classic"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/popCultureButton"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsText"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/purdueButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="purduePressed"
+        android:text="Purdue"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <Button
+        android:id="@+id/technologyButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="@drawable/rounded_button"
+        android:onClick="techPressed"
+        android:text="Technology"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/purdueButton"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <Button
+        android:id="@+id/popCultureButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="@drawable/rounded_button"
+        android:onClick="culturePressed"
+        android:text="Pop Culture"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <Button
+        android:id="@+id/scienceButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_row="1"
+        android:layout_column="5"
+        android:layout_marginTop="202dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="sciencePressed"
+        android:text="Science"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/technologyButton"
+        app:layout_constraintEnd_toStartOf="@+id/spicyButton"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/popCultureButton"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Button
+        android:id="@+id/spicyButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_row="1"
+        android:layout_column="5"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="spicyPressed"
+        android:text="Spicy"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
