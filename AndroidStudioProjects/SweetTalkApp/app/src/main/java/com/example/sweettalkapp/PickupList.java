@@ -79,7 +79,7 @@ public class PickupList {
         }
 
         else if (category == PURDUE) {
-            lines = new String[] {"Lemme you boiler you up and hammer you down.",
+            lines = new String[] {"Lemme boiler you up and hammer you down.",
                     "I don’t know if it’s just because we don’t A/C or you, but it’s pretty hot in here",
                     "What if we held hands under the bell tower",
                     "Hey, I’m an Engineering major at Purdue",

@@ -16,6 +16,7 @@
         android:text="Pick a category:"
         android:textColor="#E6000000"
         android:textSize="30sp"
+        app:fontFamily="@font/alice"
         app:layout_constraintBottom_toTopOf="@+id/popCultureButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
